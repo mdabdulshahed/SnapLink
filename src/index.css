@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import "@fontsource/barlow/400.css";
+@import "@fontsource/barlow/500.css";
+@import "@fontsource/barlow/600.css";
+@import "@fontsource/barlow-condensed/600.css";
+@import "@fontsource/barlow-condensed/700.css";
+
+@theme {
+  --font-sans: "Barlow", system-ui, sans-serif;
+  --font-condensed: "Barlow Condensed", "Barlow", sans-serif;
+
+  --color-postal: #c8102e;
+  --color-postal-dark: #9e0c24;
+  --color-airmail: #1c3f94;
+  --color-ink: #141414;
+  --color-muted: #4a5068;
+  --color-placeholder: #676d85;
+  --color-envelope: #eef1f8;
+  --color-rule: #c9d0e0;
+}
+
+@layer base {
+  body {
+    @apply bg-envelope font-sans text-ink antialiased;
+    caret-color: var(--color-postal);
+    accent-color: var(--color-airmail);
+    color-scheme: light;
+    scrollbar-color: var(--color-airmail) var(--color-envelope);
+  }
+
+  ::selection {
+    background: var(--color-airmail);
+    color: white;
+  }
+
+  a {
+    @apply text-airmail underline decoration-1 underline-offset-4 hover:decoration-2;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-airmail);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .field-label {
+    @apply block font-condensed text-lg font-semibold tracking-wider uppercase;
+  }
+
+  .field {
+    @apply h-12 border border-rule bg-white px-3 text-base text-ink placeholder:text-placeholder focus:border-airmail;
+  }
+
+  select.field {
+    appearance: none;
+    padding-right: 2.75rem;
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 6l5 5 5-5' fill='none' stroke='%231c3f94' stroke-width='2' stroke-linecap='square'/%3E%3C/svg%3E")
+      no-repeat right 0.875rem center / 1rem;
+  }
+}
+
+/* The red/blue diagonal edge of an airmail envelope. */
+.airmail-stripe {
+  height: 8px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--color-postal) 0 12px,
+    white 12px 18px,
+    var(--color-airmail) 18px 30px,
+    white 30px 36px
+  );
+}
+
+.stamp-in {
+  animation: stamp-in 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes stamp-in {
+  from {
+    opacity: 0;
+    transform: scale(1.35) rotate(-16deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(-8deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stamp-in {
+    animation: none;
+    transform: rotate(-8deg);
+  }
+}

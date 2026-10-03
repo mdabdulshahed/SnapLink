@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T00:00:00Z",
+  "title": "Design System: SnapLink",
+  "extensions": {
+    "colorMeta": {
+      "postal": {
+        "role": "primary",
+        "displayName": "Postal Red",
+        "canonical": "#c8102e",
+        "tonalRamp": [
+          "oklch(15% 0.19 22)",
+          "oklch(25% 0.19 22)",
+          "oklch(35% 0.19 22)",
+          "oklch(45% 0.19 22)",
+          "oklch(55% 0.19 22)",
+          "oklch(65% 0.19 22)",
+          "oklch(80% 0.19 22)",
+          "oklch(95% 0.19 22)"
+        ]
+      },
+      "postal-dark": {
+        "role": "primary",
+        "displayName": "Franking Red",
+        "canonical": "#9e0c24",
+        "tonalRamp": [
+          "oklch(15% 0.16 22)",
+          "oklch(25% 0.16 22)",
+          "oklch(35% 0.16 22)",
+          "oklch(45% 0.16 22)",
+          "oklch(55% 0.16 22)",
+          "oklch(65% 0.16 22)",
+          "oklch(80% 0.16 22)",
+          "oklch(95% 0.16 22)"
+        ]
+      },
+      "airmail": {
+        "role": "secondary",
+        "displayName": "Airmail Blue",
+        "canonical": "#1c3f94",
+        "tonalRamp": [
+          "oklch(15% 0.15 265)",
+          "oklch(25% 0.15 265)",
+          "oklch(35% 0.15 265)",
+          "oklch(45% 0.15 265)",
+          "oklch(55% 0.15 265)",
+          "oklch(65% 0.15 265)",
+          "oklch(80% 0.15 265)",
+          "oklch(95% 0.15 265)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#141414",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(65% 0 0)",
+          "oklch(80% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate Muted",
+        "canonical": "#4a5068",
+        "tonalRamp": [
+          "oklch(15% 0.04 275)",
+          "oklch(25% 0.04 275)",
+          "oklch(35% 0.04 275)",
+          "oklch(45% 0.04 275)",
+          "oklch(55% 0.04 275)",
+          "oklch(65% 0.04 275)",
+          "oklch(80% 0.04 275)",
+          "oklch(95% 0.04 275)"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Slate Placeholder",
+        "canonical": "#676d85",
+        "tonalRamp": [
+          "oklch(15% 0.04 275)",
+          "oklch(25% 0.04 275)",
+          "oklch(35% 0.04 275)",
+          "oklch(45% 0.04 275)",
+          "oklch(55% 0.04 275)",
+          "oklch(65% 0.04 275)",
+          "oklch(80% 0.04 275)",
+          "oklch(95% 0.04 275)"
+        ]
+      },
+      "envelope": {
+        "role": "neutral",
+        "displayName": "Envelope",
+        "canonical": "#eef1f8",
+        "tonalRamp": [
+          "oklch(15% 0.015 270)",
+          "oklch(25% 0.015 270)",
+          "oklch(35% 0.015 270)",
+          "oklch(45% 0.015 270)",
+          "oklch(55% 0.015 270)",
+          "oklch(65% 0.015 270)",
+          "oklch(80% 0.015 270)",
+          "oklch(95% 0.015 270)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Ledger Rule",
+        "canonical": "#c9d0e0",
+        "tonalRamp": [
+          "oklch(15% 0.025 270)",
+          "oklch(25% 0.025 270)",
+          "oklch(35% 0.025 270)",
+          "oklch(45% 0.025 270)",
+          "oklch(55% 0.025 270)",
+          "oklch(65% 0.025 270)",
+          "oklch(80% 0.025 270)",
+          "oklch(95% 0.025 270)"
+        ]
+      },
+      "label-white": {
+        "role": "neutral",
+        "displayName": "Label White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(65% 0 0)",
+          "oklch(80% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page H1 and wordmark; uppercase; 60px from 640px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Short URL on the forwarding label; 48px from 640px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Uppercase section heads on Terms."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Form text, label rows (tabular figures for dates), messages."
+      },
+      "body-lead": {
+        "displayName": "Body lead",
+        "purpose": "Intro line and Terms paragraphs."
+      },
+      "body-small": {
+        "displayName": "Body small",
+        "purpose": "Helper text, hobby notice, footer."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase field names and row terms."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Uppercase button text."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "stamp-in",
+        "value": "420ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Postmark lands once with a new forwarding label: scale 1.35 to 1, rotate -16deg to -8deg. None under reduced motion."
+      },
+      {
+        "name": "color-transition",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Button background hover."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      }
+    ],
+    "layout": {
+      "maxWidth": "768px"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Create short link: the one red action on the order.",
+      "html": "<button class=\"ds-btn-primary\">Create short link</button>",
+      "css": ".ds-btn-primary { background: var(--color-postal, #c8102e); font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; height: 48px; padding: 0 32px; border: 0; border-radius: 0; color: #fff; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4,0,0.2,1); } .ds-btn-primary:hover { background: var(--color-postal-dark, #9e0c24); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-airmail, #1c3f94); outline-offset: 2px; } .ds-btn-primary:disabled { opacity: 0.7; cursor: wait; }"
+    },
+    {
+      "name": "Copy Button",
+      "kind": "button",
+      "refersTo": "button-copy",
+      "description": "Copy action on the forwarding label; blue for the post office's response.",
+      "html": "<button class=\"ds-btn-copy\">Copy link</button>",
+      "css": ".ds-btn-copy { background: var(--color-airmail, #1c3f94); font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; height: 48px; padding: 0 32px; border: 0; border-radius: 0; color: #fff; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4,0,0.2,1); } .ds-btn-copy:hover { background: var(--color-ink, #141414); } .ds-btn-copy:focus-visible { outline: 2px solid var(--color-airmail, #1c3f94); outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Labelled square field with ledger-rule border.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-url\">Long URL</label><input id=\"ds-url\" class=\"ds-field\" placeholder=\"https://example.com/a/very/long/link\">",
+      "css": ".ds-field-label { display: block; font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-size: 1.125rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: #141414; } .ds-field { display: block; width: 100%; margin-top: 8px; height: 48px; padding: 0 12px; border: 1px solid var(--color-rule, #c9d0e0); border-radius: 0; background: #fff; color: #141414; font-family: 'Barlow', system-ui, sans-serif; font-size: 1rem; } .ds-field::placeholder { color: var(--color-placeholder, #676d85); } .ds-field:focus { border-color: var(--color-airmail, #1c3f94); } .ds-field:focus-visible { outline: 2px solid var(--color-airmail, #1c3f94); outline-offset: 2px; }"
+    },
+    {
+      "name": "Prefixed Alias Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Field with a fixed programicle.com/ prefix; focus lives on the wrapper.",
+      "html": "<div class=\"ds-prefix-field\"><span>programicle.com/</span><input placeholder=\"my-link\"></div>",
+      "css": ".ds-prefix-field { display: flex; align-items: center; height: 48px; border: 1px solid var(--color-rule, #c9d0e0); background: #fff; font-family: 'Barlow', system-ui, sans-serif; font-size: 1rem; } .ds-prefix-field span { padding-left: 12px; color: var(--color-muted, #4a5068); user-select: none; } .ds-prefix-field input { flex: 1; min-width: 0; height: 100%; border: 0; background: transparent; padding-right: 12px; font: inherit; color: #141414; outline: none; } .ds-prefix-field input::placeholder { color: #676d85; } .ds-prefix-field:focus-within { border-color: var(--color-airmail, #1c3f94); outline: 2px solid var(--color-airmail, #1c3f94); outline-offset: 2px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "wordmark",
+      "description": "Red condensed wordmark left, blue underlined text links right.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-wordmark\" href=\"#\">SnapLink</a><nav><a href=\"#\">How it works</a><a href=\"#\">Source</a></nav></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0; } .ds-wordmark { font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-size: 1.875rem; font-weight: 700; letter-spacing: 0.025em; text-transform: uppercase; color: var(--color-postal, #c8102e); text-decoration: none; } .ds-nav nav { display: flex; gap: 20px; font-family: 'Barlow', system-ui, sans-serif; font-size: 1rem; font-weight: 500; } .ds-nav nav a { color: var(--color-airmail, #1c3f94); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; } .ds-nav nav a:hover { text-decoration-thickness: 2px; } .ds-nav a:focus-visible { outline: 2px solid #1c3f94; outline-offset: 2px; }"
+    },
+    {
+      "name": "Forwarding Label",
+      "kind": "card",
+      "refersTo": "order-panel",
+      "description": "Signature result: short URL at poster scale over ruled rows, red-bordered white label.",
+      "html": "<section class=\"ds-label\"><div class=\"ds-label-top\"><a href=\"#\">programicle.com/<wbr>my-link</a></div><dl><div><dt>Forwards to</dt><dd>https://example.com/a/very/long/link</dd></div><div><dt>Created</dt><dd>3 Oct 2026, 14:05</dd></div><div><dt>Expires</dt><dd>Never</dd></div></dl></section>",
+      "css": ".ds-label { background: #fff; border: 2px solid var(--color-postal, #c8102e); font-family: 'Barlow', system-ui, sans-serif; color: #141414; } .ds-label-top { padding: 20px; } .ds-label-top a { display: block; font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-size: 1.875rem; font-weight: 700; line-height: 1.25; color: #141414; text-decoration: none; } .ds-label-top a:hover { text-decoration: underline; } .ds-label dl { margin: 0; border-top: 1px solid var(--color-postal, #c8102e); } .ds-label dl div { display: grid; grid-template-columns: 7.5rem 1fr; gap: 16px; padding: 12px 20px; border-top: 1px solid var(--color-rule, #c9d0e0); } .ds-label dl div:first-child { border-top: 0; } .ds-label dt { font-family: 'Barlow Condensed', 'Barlow', sans-serif; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-muted, #4a5068); } .ds-label dd { margin: 0; min-width: 0; font-variant-numeric: tabular-nums; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }"
+    },
+    {
+      "name": "Postmark",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Blue circular date stamp that lands once with the label.",
+      "html": "<svg class=\"ds-postmark\" viewBox=\"0 0 120 120\"><defs><path id=\"ds-ring\" d=\"M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0\"/></defs><circle cx=\"60\" cy=\"60\" r=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"60\" cy=\"60\" r=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text fill=\"currentColor\" font-family=\"Barlow Condensed\" font-weight=\"700\" font-size=\"11\" letter-spacing=\"1.4\"><textPath href=\"#ds-ring\">FORWARDED BY SNAPLINK · PROGRAMICLE.COM ·</textPath></text><text x=\"60\" y=\"56\" text-anchor=\"middle\" fill=\"currentColor\" font-family=\"Barlow Condensed\" font-weight=\"700\" font-size=\"22\">03 OCT</text><text x=\"60\" y=\"76\" text-anchor=\"middle\" fill=\"currentColor\" font-family=\"Barlow Condensed\" font-weight=\"600\" font-size=\"16\">2026</text></svg>",
+      "css": ".ds-postmark { width: 128px; height: 128px; color: var(--color-airmail, #1c3f94); animation: ds-stamp-in 420ms cubic-bezier(0.16, 1, 0.3, 1) both; } @keyframes ds-stamp-in { from { opacity: 0; transform: scale(1.35) rotate(-16deg); } to { opacity: 1; transform: scale(1) rotate(-8deg); } } @media (prefers-reduced-motion: reduce) { .ds-postmark { animation: none; transform: rotate(-8deg); } }"
+    },
+    {
+      "name": "Airmail Stripe",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "8px red/white/blue diagonal band edging the top of every page.",
+      "html": "<div class=\"ds-airmail-stripe\"></div>",
+      "css": ".ds-airmail-stripe { height: 8px; background: repeating-linear-gradient(-45deg, var(--color-postal, #c8102e) 0 12px, #fff 12px 18px, var(--color-airmail, #1c3f94) 18px 30px, #fff 30px 36px); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Postal Redirection Stock",
+    "overview": "**Creative North Star: \"Postal Redirection Stock\"**\n\nSnapLink treats every short link as a mail forwarding order: mail for this short address goes to that long one, valid until a date. The page is a cool airmail-blue envelope; the working surfaces are white labels edged in postal red; the result is stamped with a blue circular date mark. Density is low and the column is narrow, because the tool is one form and one result.\n\nThe world is flat printed stock. Depth comes from coloured rules and the white label sitting on the tinted page, never from shadow or rounding. Type is a condensed poster face for anything that would be printed on a form (headings, field names, buttons, the short URL), with a plain humanist sans for everything a person reads.",
+    "keyCharacteristics": [
+      "Airmail chevron stripe (red / white / blue, 8px) edges the top of every page.",
+      "White label panels with a 2px postal-red border on a pale envelope ground.",
+      "Square corners everywhere.",
+      "Barlow Condensed uppercase for form vocabulary; Barlow for reading text.",
+      "One signature motion: the date stamp lands once with the result."
+    ],
+    "rules": [
+      {
+        "name": "The Two Inks Rule",
+        "body": "Red marks the order (what you fill in and submit); blue marks the post office's response (links, focus, stamp, copy). Don't swap them.",
+        "section": "colors"
+      },
+      {
+        "name": "The White Label Rule",
+        "body": "Working surfaces are white on the envelope ground; the page itself is never white.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Dates Rule",
+        "body": "Dates and times in label rows use tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Form Vocabulary Rule",
+        "body": "Barlow Condensed uppercase is for things printed on the form (headings, field names, row terms, buttons, the short URL). Sentences are Barlow in sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Printed Stock Rule",
+        "body": "Separation is a rule or a ground change, never a shadow or blur.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** put working surfaces on white with a 2px Postal Red border over the Envelope ground.",
+      "**Do** use Airmail Blue for every link, focus ring, and post-office response (stamp, copy).",
+      "**Do** set field names, row terms, buttons, and headings in Barlow Condensed uppercase; keep sentences in Barlow.",
+      "**Do** use tabular figures for dates and times.",
+      "**Do** keep the airmail stripe at the top of every page.",
+      "**Do** keep the stamp-landing motion to the one moment a label is issued, with a reduced-motion rest state."
+    ],
+    "donts": [
+      "**Don't** round corners; everything is 0px except the circular postmark.",
+      "**Don't** add drop shadows, blurs, or gradients other than the airmail stripe.",
+      "**Don't** centre page headings; the column reads left-aligned.",
+      "**Don't** use red for links or focus, or blue for the primary submit action.",
+      "**Don't** confirm an action by colour alone; say it in text."
+    ]
+  }
+}

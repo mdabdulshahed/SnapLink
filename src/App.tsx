@@ -1,11 +1,18 @@
+import type { ComponentType } from "react";
+import HowItWorksPage from "./HowItWorksPage.tsx";
 import ShortenForm from "./ShortenForm.tsx";
 import TermsPage from "./TermsPage.tsx";
 
-const BACKEND_REPO = "https://github.com/mdabdulshahed/SnapLink-backend";
+const SOURCE_REPO = "https://github.com/mdabdulshahed/SnapLink";
+
+const PAGES: Record<string, ComponentType> = {
+  "/how-it-works": HowItWorksPage,
+  "/terms": TermsPage,
+};
 
 export default function App() {
-  // Two pages don't need a router.
-  const isTermsPage = window.location.pathname === "/terms";
+  // A few static pages don't need a router.
+  const Page = PAGES[window.location.pathname] ?? ShortenForm;
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -19,13 +26,13 @@ export default function App() {
           SnapLink
         </a>
         <nav aria-label="Project" className="flex gap-5 text-sm font-medium sm:text-base">
-          <a href={`${BACKEND_REPO}/blob/main/docs/ARCHITECTURE.md`}>How it works</a>
-          <a href={BACKEND_REPO}>Source</a>
+          <a href="/how-it-works">How it works</a>
+          <a href={SOURCE_REPO}>Source</a>
         </nav>
       </header>
 
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 pt-6 pb-16 sm:px-6 sm:pt-10">
-        {isTermsPage ? <TermsPage /> : <ShortenForm />}
+        <Page />
       </main>
 
       <footer className="border-t border-rule">

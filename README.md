@@ -4,14 +4,15 @@ The web UI for SnapLink, a small URL shortener that turns a long URL into a shor
 `programicle.com/<code>` link.
 
 - **Live:** https://snaplink.programicle.com *(after deployment)*
-- **API, architecture, and system-design docs:**
-  [SnapLink-backend](https://github.com/mdabdulshahed/SnapLink-backend)
+- **How the system works:** the in-app [How it works](src/HowItWorksPage.tsx) page
+  (`/how-it-works`). The API and full system-design docs live in a separate, private
+  backend repo.
 
 ## What it does
 
 Paste a URL, optionally pick when it expires (never, 1 hour to 30 days, or a date up to a year
 out) and a custom alias, and get a short link to copy. There are no accounts and no
-dashboard. That's deliberate: see the backend repo's docs for the reasoning.
+dashboard. That's deliberate: the How it works page explains the reasoning.
 
 ## Stack
 
@@ -21,6 +22,7 @@ React + TypeScript + Vite + Tailwind CSS v4, deployed on Vercel. The only networ
 ```text
 src/
 ├── App.tsx              page shell: header, footer, picks the page by URL path
+├── HowItWorksPage.tsx   /how-it-works: the architecture in plain language
 ├── ShortenForm.tsx      the form, loading/error states, expiry calculation
 ├── ForwardingLabel.tsx  the result: short link, details, copy button, date stamp
 ├── TermsPage.tsx        /terms
@@ -30,7 +32,7 @@ src/
 
 A few decisions worth knowing:
 
-- **No router.** Two pages don't need one. `App.tsx` checks `window.location.pathname`, and
+- **No router.** Three static pages don't need one. `App.tsx` checks `window.location.pathname`, and
   `vercel.json` sends every path to `index.html`.
 - **Expiry is computed in the browser.** "7 days" becomes an absolute `expiresAt` timestamp,
   so the API only has to understand one format. The API enforces the one-year limit itself.
